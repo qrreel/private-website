@@ -10,7 +10,12 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        // outline: 1px solid red;
+        // outline: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    *::selection {
+        color: #04b8c4;
+        background: rgba(200, 200, 200, .1);
     }
 
     body {
@@ -21,9 +26,12 @@ export const GlobalStyle = createGlobalStyle`
         color: white;
         font-family: 'Alumni Sans Pinstripe', sans-serif;
     }
-    
-    ul {
-        list-style-type: none;
-        line-height: .9em;
+
+    #root {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        font-size: 4rem;
+        margin: .5em 1em;
+        gap: 1em;
     }
 `;

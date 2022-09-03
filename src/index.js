@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { GlobalStyle } from './GlobalStyle.component';
-import { Index } from './Index.component';
+import { GlobalStyle } from './IndexStyle.component';
+import { Welcome } from './Welcome.component';
+import { Portfolio } from './Portfolio.component';
 
 const Page = () => {
     return (
         <>
             <GlobalStyle />
-            <Index />
+            <Welcome />
+            <Portfolio />
         </>
     );
 }
