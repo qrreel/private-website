@@ -1,3 +1,4 @@
+import { Component } from "react";
 import styled from "styled-components";
 import GitHubLogo from "./img/GitHub-Mark-Light-32px.png"
 import LinkedInLogo from "./img/PinClipart.com_graduation-designs-clip-art_1198440.png"
@@ -44,15 +45,25 @@ text-shadow: 1px 1px 1px black;
 }
 `;
 
-export const Contact = () => {
-    return(
-        <>
+export class Contact extends Component {
+    state = {
+        contacts: [
+            { name: 'Mail', src: MailLogo, anchore: "mailto:rafalwas88@gmail.com" },
+            { name: 'LinkedIn', src: LinkedInLogo, anchore: "https://www.linkedin.com/in/rafa%C5%82-w%C4%85s-5b34a0248/" },
+            { name: 'GitHub', src: GitHubLogo, anchore: "https://github.com/qrreel" }
+        ]
+    }
+
+    render() {
+        return(
             <ContactContainer>
                 <div id="contact-container">contact</div>
-                <img src={MailLogo} id="Mail_logo" alt="Mail" className="contact-container__icon" />
-                <img src={LinkedInLogo} id="LinkedIn_logo" alt="LinkedIn" className="contact-container__icon" />
-                <img src={GitHubLogo} id="GitHub_logo" alt="GitHub" className="contact-container__icon" />
+                {this.state.contacts.map(contact => (
+                    <a href={ contact.anchore } key={ contact.name } target="blank">
+                        <img src={ contact.src } className="contact-container__icon" alt={ contact.name } /> 
+                    </a>                 
+                ))}
             </ContactContainer>
-        </>
-    )
+        )
+    }
 };

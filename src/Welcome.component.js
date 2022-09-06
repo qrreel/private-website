@@ -62,20 +62,18 @@ h1 {
 
 export const Welcome = () => {
     return(
-        <>
-            <WelcomeContainer>
-                <Contact />
-                <h1>welcome</h1>
-                <section id="about-me">
-                    <span id="about-me__hidden-tittle">about me</span>
-                    <p id="about-me__content">
-                        My name is Rafał and I am a self-taught developer.<br />
-                        Live in Gdańsk, Poland.<br /><br />
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi! (...)
-                    </p>
-                    <div id="about-me__read-more-btn">read more</div>
-                </section>
-            </WelcomeContainer>
-        </>
+        <WelcomeContainer>
+            <Contact />
+            <h1>welcome</h1>
+            <section id="about-me">
+                <span id="about-me__hidden-tittle">about me</span>
+                <p id="about-me__content">
+                    My name is Rafał and I am a self-taught developer.<br />
+                    Live in Gdańsk, Poland.<br /><br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam itaque! Consequuntur, asperiores modi! (...)
+                </p>
+                <div id="about-me__read-more-btn">read more</div>
+            </section>
+        </WelcomeContainer>
     )
 };

@@ -13,12 +13,10 @@ h4 {
 
 export const Portfolio = () => {
     return(
-        <>
-            <PortfolioContainer>
-                <h4>projects & skills</h4>
-                <Projects />
-                <Skills />
-            </PortfolioContainer>
-        </>
+        <PortfolioContainer>
+            <h4>projects & skills</h4>
+            <Projects />
+            <Skills />
+        </PortfolioContainer>
     )
 };
