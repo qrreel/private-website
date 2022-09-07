@@ -15,7 +15,7 @@ ul {
 .skill-container__skill-level {
     letter-spacing: .2em;
     margin: 0 1em;
-    opacity: .3;
+    opacity: .2;
 }
 `;
 
@@ -29,7 +29,7 @@ export class Skills extends Component {
             { name: 'TypeScript', range: 1 },
             { name: 'jQuery', range: 1 },
             { name: 'React', range: 1 },
-            { name: 'Python', range: 3 },
+            { name: 'Python', range: 2 },
             { name: 'Jest', range: 1 },
             { name: 'Rest Api', range: 2 },
             { name: 'Npm', range: 2 },
@@ -44,9 +44,10 @@ export class Skills extends Component {
                     {this.state.skills.map(skill => (
                         <li key={ skill.name }>
                             { skill.name }
-                            <span className="skill-container__skill-level">
+                            {/* <span className="skill-container__skill-level">
                                 ★★★★★
-                            </span>
+                            </span> */}
+                            <input type="range" value={skill.range} min="0" max="5" />
                         </li>
                     ))}
                 </ul>
