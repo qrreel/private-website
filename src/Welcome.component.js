@@ -33,7 +33,7 @@ h1 {
 
 #about-me:hover #about-me__hidden-tittle {
     top: -.3em;
-    opacity: .1;
+    opacity: .2;
 }
 
 #about-me__read-more-btn {

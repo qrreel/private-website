@@ -45,25 +45,23 @@ text-shadow: 1px 1px 1px black;
 }
 `;
 
-export class Contact extends Component {
-    state = {
-        contacts: [
-            { name: 'Mail', src: MailLogo, anchore: "mailto:rafalwas88@gmail.com" },
-            { name: 'LinkedIn', src: LinkedInLogo, anchore: "https://www.linkedin.com/in/rafa%C5%82-w%C4%85s-5b34a0248/" },
-            { name: 'GitHub', src: GitHubLogo, anchore: "https://github.com/qrreel" }
-        ]
-    }
+export function Contact() {
+    const links = [
+        { name: 'Mail', src: MailLogo, anchore: "mailto:rafalwas88@gmail.com" },
+        { name: 'LinkedIn', src: LinkedInLogo, anchore: "https://www.linkedin.com/in/rafa%C5%82-w%C4%85s-5b34a0248/" },
+        { name: 'GitHub', src: GitHubLogo, anchore: "https://github.com/qrreel" }
+    ]
 
-    render() {
-        return(
-            <ContactContainer>
-                <div id="contact-container">contact</div>
-                {this.state.contacts.map(contact => (
-                    <a href={ contact.anchore } key={ contact.name } target="blank">
-                        <img src={ contact.src } className="contact-container__icon" alt={ contact.name } /> 
-                    </a>                 
-                ))}
-            </ContactContainer>
-        )
-    }
+    const contact = links.map(link =>
+        <a href={ link.anchore } key={ link.name } target="blank">
+            <img src={ link.src } className="contact-container__icon" alt={ link.name } /> 
+        </a>  
+    )
+
+    return(
+        <ContactContainer>
+            <div id="contact-container">contact</div>
+            { contact }
+        </ContactContainer>
+    )
 };
