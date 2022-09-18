@@ -7,13 +7,13 @@ import MailLogo from "./img/Daco_532333.png"
 const ContactContainer = styled.section`
 display: flex;
 align-items: center;
-font-size: .5em;
+font-size: 2rem;
 gap: .5em;
 margin: 0;
 position: absolute;
 right: 0;
-top: 0em;
-text-shadow: 1px 1px 1px black;
+top: 0;
+text-shadow: 1px 1px black;
 
 #contact-container {
     position: relative;
@@ -24,7 +24,7 @@ text-shadow: 1px 1px 1px black;
     content: '';
     top: .8em;
     right: -.3em;
-    width: 20em;
+    width: 100vw;
     height: .2em;
     clip-path: polygon(0 0, 100% 0%, calc(100% - .2em) 100%, 0% 100%);
     background-color: #46e4f0;

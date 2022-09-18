@@ -5,8 +5,6 @@ display: grid;
 place-items: center;
 margin: .5em;
 padding: 1em;
-border-right: 15px solid #b147b3;
-border-radius: 15px;
 font-size: .5em;
 
 #project-container {
