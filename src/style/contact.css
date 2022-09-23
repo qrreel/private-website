@@ -1,0 +1,39 @@
+#contact-container {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 0.5em;
+  position: absolute;
+  right: 0;
+  top: -1.2em;
+  text-shadow: 1px 1px black;
+}
+
+#contact-container__contact {
+  position: relative;
+}
+
+#contact-container__contact::before {
+  position: absolute;
+  content: "";
+  top: 0.8em;
+  right: -0.3em;
+  width: 100vw;
+  height: 0.2em;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 0.2em) 100%, 0% 100%);
+  background-color: #46e4f0;
+  z-index: -2;
+}
+
+.contact-container__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  transition: 0.1s ease-out;
+}
+
+.contact-container__icon:hover {
+  cursor: pointer;
+  background-color: #04b8c4;
+  box-shadow: 0 0 5px 5px #04b8c4;
+}

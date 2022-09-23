@@ -1,0 +1,33 @@
+#skills-container {
+  margin: 0.5em 0;
+  padding: 1em 0.75em;
+  border-right: 0.3em solid #b147b3;
+  border-radius: 0.1em;
+  position: relative;
+  width: 250px;
+}
+
+#skills-container__title {
+  position: absolute;
+  bottom: 0.5em;
+  right: -1.2em;
+  opacity: 0.2;
+  writing-mode: vertical-lr;
+}
+
+ul {
+  font-size: 0.7em;
+  list-style-type: none;
+  line-height: 0.95em;
+  text-align: right;
+  cursor: pointer;
+}
+
+ul:hover li:not(:hover) {
+  opacity: 0.4;
+  transition: all 0.15s;
+}
+
+.skills-container__skill-level {
+  margin-left: 1em;
+}

@@ -1,0 +1,47 @@
+#about-me {
+  margin: 2em auto;
+  padding: 1em 0.5em 1em 2em;
+  border-left: 0.4em solid #aab347;
+  border-radius: 0.1em;
+  position: relative;
+}
+
+#about-me__hidden-tittle {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -0.3em;
+  transition: 0.2s;
+}
+
+#about-me:hover #about-me__hidden-tittle {
+  top: -0.2em;
+  opacity: 0.2;
+}
+
+#about-me__read-more-btn {
+  position: absolute;
+  background: transparent;
+  font-size: 1em;
+  color: white;
+  opacity: 0;
+  padding: 0.2em 1em;
+  bottom: -1em;
+  right: 0;
+  border: 3px solid;
+  transition: 0.2s;
+}
+
+#about-me:hover #about-me__read-more-btn,
+#about-me__read-more-btn:focus {
+  bottom: -1.75em;
+  opacity: 0.7;
+}
+
+#about-me__read-more-btn:hover {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: white;
+  color: var(--bgColor);
+  opacity: 1;
+}
