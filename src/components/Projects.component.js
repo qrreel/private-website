@@ -1,19 +1,40 @@
-import "../style/projects.css";
 import { projects } from "../data/data-projects";
 
+import "../style/projects.css";
+
 export const Projects = () => {
-  const array = projects.map((project) => (
-    <div key={project.id} id="projects-container__project">
-      <div id="project-container__project-title">{project.title}</div>
-      <p id="project-container__project-description">{project.description}</p>
-      <a href="#">GIT</a>
+  const projectsArray = projects.map((project) => (
+    <div key={project.id} className="projects-container__project">
+      <div className="project-container__project-title">{project.title}</div>
+      <p className="project-container__project-description">
+        {project.description}
+      </p>
+      <br />
+      <div className="project-container__icon-container">
+        <div>
+          {project.uses.map((logo) => (
+            <img
+              key={logo.key}
+              className="icon-container__logo"
+              src={logo.img}
+            />
+          ))}
+        </div>
+        <div>
+          {project.sources.map((source) => (
+            <a href={source.src} key={source.src} target="blank">
+              <img src={source.img} className="icon-container__source" />
+            </a>
+          ))}
+        </div>
+      </div>
     </div>
   ));
 
   return (
     <section id="projects-container">
       <button>prev</button>
-      {array}
+      {projectsArray}
       <button>next</button>
     </section>
   );

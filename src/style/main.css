@@ -2,6 +2,7 @@
 
 :root {
   --bgColor: #1a2838;
+  --titleOpacity: 0.2;
 }
 
 * {
@@ -9,7 +10,6 @@
   margin: 0;
   padding: 0;
   font-family: "Alumni Sans Pinstripe", sans-serif;
-  /* outline: 3px solid rgba(0, 0, 0, 1); */
 }
 
 *::selection {
@@ -31,6 +31,7 @@ body {
 
 h4 {
   font-size: 2em;
+  opacity: var(--titleOpacity);
   font-weight: normal;
   cursor: default;
 }
@@ -39,38 +40,38 @@ h4 {
   position: fixed;
   display: grid;
   place-items: center;
-  height: 45rem;
+  height: 22.5em;
   aspect-ratio: 1 / 1;
   right: -15rem;
-  bottom: -5rem;
-  border: 2rem solid white;
+  bottom: -2.5em;
+  border: 1em solid white;
   border-radius: 50%;
-  opacity: 0.03;
-  font-size: 1rem;
+  opacity: 0.02;
+  z-index: -1;
 }
 
 #background-arrow__base {
   position: relative;
-  width: 4em;
-  height: 27em;
+  width: 2em;
+  height: 13.5em;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1em;
 }
 
 #background-arrow__bottom::before,
 #background-arrow__bottom::after {
   position: absolute;
   content: "";
-  bottom: -2rem;
-  right: calc(-50% - 2rem);
-  width: 4rem;
-  height: 15rem;
+  bottom: -1em;
+  right: calc(-50% - 1em);
+  width: 2em;
+  height: 7.5em;
   background: white;
-  border-radius: 2rem;
+  border-radius: 1em;
   rotate: 45deg;
 }
 
 #background-arrow__bottom::after {
-  left: calc(-50% - 2rem);
+  left: calc(-50% - 1em);
   rotate: -45deg;
 }

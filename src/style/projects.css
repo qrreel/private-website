@@ -6,15 +6,27 @@
   flex-wrap: wrap;
 }
 
-#projects-container__project {
+.projects-container__project {
   border: 1px solid white;
   height: 200px;
+  width: 250px;
 }
 
-#project-container__project-title {
+.project-container__project-title {
   font-size: 2rem;
 }
 
-#project-container__project-description {
+.project-container__project-description {
   font-size: 1rem;
+}
+
+.project-container__icon-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-container__logo,
+.icon-container__source {
+  width: 25px;
+  aspect-ratio: 1 / 1;
 }

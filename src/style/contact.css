@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #04b8c4;
+}
+
 #contact-container {
   display: flex;
   align-items: center;
@@ -21,19 +25,19 @@
   width: 100vw;
   height: 0.2em;
   clip-path: polygon(0 0, 100% 0%, calc(100% - 0.2em) 100%, 0% 100%);
-  background-color: #46e4f0;
+  background-color: var(--mainColor);
   z-index: -2;
 }
 
 .contact-container__icon {
   width: 32px;
-  height: 32px;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   transition: 0.1s ease-out;
 }
 
 .contact-container__icon:hover {
   cursor: pointer;
-  background-color: #04b8c4;
-  box-shadow: 0 0 5px 5px #04b8c4;
+  background-color: var(--mainColor);
+  box-shadow: 0 0 5px 5px var(--mainColor);
 }

@@ -16,7 +16,7 @@
 
 #about-me:hover #about-me__hidden-tittle {
   top: -0.2em;
-  opacity: 0.2;
+  opacity: var(--titleOpacity);
 }
 
 #about-me__read-more-btn {

@@ -14,29 +14,30 @@ function App() {
   const ref = useRef();
   const [width, setWidth] = useState();
 
-  let movement_timer;
+  let movementTimer;
+  const MIN_WIDTH = 500;
 
   function getNewWidth() {
     setWidth(ref.current.offsetWidth);
   }
 
   window.addEventListener("resize", () => {
-    movement_timer = setInterval(getNewWidth(), 100);
-    clearInterval(movement_timer);
+    movementTimer = setInterval(getNewWidth(), 100);
+    clearInterval(movementTimer);
   });
 
   useLayoutEffect(() => getNewWidth());
+
   return (
-    <>
+    <div style={{ fontSize: width > MIN_WIDTH ? "2rem" : "1.7rem" }}>
       <BackgroundArrow />
 
-      <div
-        id="top-container"
-        style={{ fontSize: width > 500 ? "2rem" : "1.7rem" }}
-      >
+      <div id="top-container">
         <div id="top-container__left" ref={ref}>
           <Contact />
-          <h1 style={{ fontSize: width > 500 ? "10rem" : "5rem" }}>welcome</h1>
+          <h1 style={{ fontSize: width > MIN_WIDTH ? "10rem" : "6rem" }}>
+            welcome
+          </h1>
           <AboutMe />
         </div>
         <div id="top-container__right">
@@ -44,7 +45,7 @@ function App() {
         </div>
       </div>
       <Projects />
-    </>
+    </div>
   );
 }
 
