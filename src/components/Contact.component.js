@@ -1,18 +1,20 @@
 import "../style/contact.css";
 
-import GitHubLogo from "../img/GitHub-Mark-Light-32px.png";
-import LinkedInLogo from "../img/PinClipart.com_graduation-designs-clip-art_1198440.png";
-import MailLogo from "../img/Daco_532333.png";
+import GITHUB_ICON from "../img/contact/github.png";
+import LINKEDIN_ICON from "../img/contact/linkedin.png";
+import MAIL_ICON from "../img/contact/mail.png";
+import PHONE_ICON from "../img/contact/phone.png";
 
 export function Contact() {
   const links = [
-    { name: "Mail", src: MailLogo, anchore: "mailto:rafalwas88@gmail.com" },
+    { name: "Mail", src: MAIL_ICON, anchore: "mailto:rafalwas88@gmail.com" },
+    { name: "Phone", src: PHONE_ICON, anchore: "tel:602367854" },
     {
       name: "LinkedIn",
-      src: LinkedInLogo,
+      src: LINKEDIN_ICON,
       anchore: "https://www.linkedin.com/in/rafa%C5%82-w%C4%85s-5b34a0248/",
     },
-    { name: "GitHub", src: GitHubLogo, anchore: "https://github.com/qrreel" },
+    { name: "GitHub", src: GITHUB_ICON, anchore: "https://github.com/qrreel" },
   ];
 
   const contact = links.map((link) => (

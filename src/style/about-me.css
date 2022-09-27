@@ -32,8 +32,7 @@
   transition: 0.2s;
 }
 
-#about-me:hover #about-me__read-more-btn,
-#about-me__read-more-btn:focus {
+#about-me:hover #about-me__read-more-btn {
   bottom: -1.75em;
   opacity: 0.7;
 }

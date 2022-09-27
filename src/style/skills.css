@@ -1,21 +1,29 @@
 #skills-container {
   margin: 0.5em 0;
-  padding: 1em 0.75em;
+  padding: 1em 0.75em 1em 0;
   border-right: 0.3em solid #b147b3;
   border-radius: 0.1em;
   position: relative;
   width: 250px;
 }
 
-#skills-container__title {
+#skills-container__title-container {
   position: absolute;
-  bottom: 0.5em;
-  right: -1.2em;
+  display: flex;
+  align-items: flex-end;
+  bottom: 1em;
+  right: -2.2em;
+  width: 2.2em;
+  overflow: hidden;
+}
+
+#skills-container__title {
+  inline-size: max-content;
   writing-mode: vertical-lr;
 }
 
 ul {
-  font-size: 0.7em;
+  font-size: 0.75em;
   list-style-type: none;
   line-height: 0.95em;
   text-align: right;
@@ -29,4 +37,20 @@ ul:hover li:not(:hover) {
 
 .skills-container__skill-level {
   margin-left: 1em;
+}
+
+.changeTitle {
+  animation: show-in 0.75s;
+}
+
+@keyframes show-in {
+  0% {
+    height: 0;
+  }
+  20% {
+    height: 0;
+  }
+  100% {
+    height: 10em;
+  }
 }

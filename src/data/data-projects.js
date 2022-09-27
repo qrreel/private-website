@@ -29,9 +29,14 @@ export const projects = [
       { key: 1, img: HTML_CSS },
       { key: 2, img: JAVASCRIPT },
       { key: 3, img: REACT },
-      { key: 4, img: FIGMA },
     ],
-    sources: [{ src: "https://github.com/qrreel/private-website", img: GIT }],
+    sources: [
+      { src: "https://github.com/qrreel/private-website", img: GIT },
+      {
+        src: "https://www.figma.com/file/2G6m5p7DMCgIpsiLZUqSmL/MyWebpage?node-id=0%3A1",
+        img: FIGMA,
+      },
+    ],
   },
   {
     id: 2,
@@ -42,7 +47,6 @@ export const projects = [
       { key: 1, img: HTML_CSS },
       { key: 2, img: JAVASCRIPT },
       { key: 3, img: REACT },
-      { key: 4, img: FIGMA },
     ],
     sources: [{ src: "#", img: GIT }],
   },
@@ -55,7 +59,6 @@ export const projects = [
       { key: 1, img: HTML_CSS },
       { key: 2, img: JAVASCRIPT },
       { key: 3, img: REACT },
-      { key: 4, img: FIGMA },
     ],
     sources: [{ src: "#", img: GIT }],
   },

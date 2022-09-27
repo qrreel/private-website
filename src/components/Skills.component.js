@@ -1,13 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { skills, levelOfExperience } from "../data/data-skills";
 import "../style/skills.css";
 
 export function Skills() {
   const SKILLS_BASE = "skills";
   const [experienceLevel, setExperienceLevel] = useState(SKILLS_BASE);
+  const [showIn, setShowIn] = useState(true);
 
   const LIGHT_STAR = { opacity: 0.9 };
   const DARK_STAR = { opacity: 0.15 };
+  const SHOW_IN_DELAY = 100;
 
   function setLevel(lvl) {
     let levelArray = [];
@@ -21,6 +23,15 @@ export function Skills() {
     }
     return levelArray;
   }
+
+  function changeSkillTitle() {
+    setShowIn(false);
+    setTimeout(() => {
+      setShowIn(true);
+    }, SHOW_IN_DELAY);
+  }
+
+  useEffect(changeSkillTitle, [experienceLevel]);
 
   const skill = skills.map((skill) => (
     <li
@@ -36,7 +47,14 @@ export function Skills() {
 
   return (
     <section id="skills-container">
-      <h4 id="skills-container__title">{experienceLevel}</h4>
+      <div
+        id="skills-container__title-container"
+        className={showIn ? "changeTitle" : null}
+      >
+        <h4 id="skills-container__title" style={showIn ? null : { opacity: 0 }}>
+          {experienceLevel}
+        </h4>
+      </div>
       <ul onMouseOut={() => setExperienceLevel(SKILLS_BASE)}>{skill}</ul>
     </section>
   );
