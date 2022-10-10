@@ -8,7 +8,7 @@ import PHONE_ICON from "../img/contact/phone.png";
 export function Contact() {
   const links = [
     { name: "Mail", src: MAIL_ICON, anchore: "mailto:rafalwas88@gmail.com" },
-    { name: "Phone", src: PHONE_ICON, anchore: "tel:602367854" },
+    { name: "Phone", src: PHONE_ICON, anchore: "tel:+48602367854" },
     {
       name: "LinkedIn",
       src: LINKEDIN_ICON,

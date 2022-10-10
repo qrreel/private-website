@@ -15,7 +15,7 @@
 }
 
 #about-me:hover #about-me__hidden-tittle {
-  top: -0.2em;
+  top: -0.3em;
   opacity: var(--titleOpacity);
 }
 

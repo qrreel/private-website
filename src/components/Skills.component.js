@@ -4,12 +4,12 @@ import "../style/skills.css";
 
 export function Skills() {
   const SKILLS_BASE = "skills";
-  const [experienceLevel, setExperienceLevel] = useState(SKILLS_BASE);
-  const [showIn, setShowIn] = useState(true);
-
+  const SHOW_IN_DELAY = 100;
   const LIGHT_STAR = { opacity: 0.9 };
   const DARK_STAR = { opacity: 0.15 };
-  const SHOW_IN_DELAY = 100;
+
+  const [experienceLevel, setExperienceLevel] = useState(SKILLS_BASE);
+  const [showIn, setShowIn] = useState(true);
 
   function setLevel(lvl) {
     let levelArray = [];

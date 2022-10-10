@@ -44,6 +44,7 @@ function App() {
         </div>
       </div>
       <Projects />
+      <footer>Copyright © 2022 Rafał Wąs. All Rights Reserved.</footer>
     </div>
   );
 }

@@ -2,7 +2,8 @@
 
 :root {
   --bgColor: #1a2838;
-  --titleOpacity: 0.2;
+  --titleColor: rgba(200, 200, 200, 0.3);
+  --arrowColor: white;
 }
 
 * {
@@ -10,7 +11,7 @@
   margin: 0;
   padding: 0;
   font-family: "Alumni Sans Pinstripe", sans-serif;
-  /* outline: 3px solid blue; */
+  /* outline: 1px solid white; */
 }
 
 *::selection {
@@ -27,14 +28,19 @@ body {
 #root {
   font-size: 4rem;
   width: 80vw;
-  margin: 4rem auto;
+  margin: 4rem auto 1rem auto;
 }
 
 h4 {
-  font-size: 2em;
-  opacity: var(--titleOpacity);
+  font-size: 2.5em;
   font-weight: normal;
   cursor: default;
+  color: var(--titleColor);
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 #background-arrow {
@@ -45,7 +51,7 @@ h4 {
   aspect-ratio: 1 / 1;
   right: -15rem;
   bottom: -2.5em;
-  border: 1em solid white;
+  border: 1em solid var(--arrowColor);
   border-radius: 50%;
   opacity: 0.02;
   z-index: -1;
@@ -55,7 +61,7 @@ h4 {
   position: relative;
   width: 2em;
   height: 13.5em;
-  background: white;
+  background: var(--arrowColor);
   border-radius: 1em;
 }
 
@@ -67,7 +73,7 @@ h4 {
   right: calc(-50% - 1em);
   width: 2em;
   height: 7.5em;
-  background: white;
+  background: var(--arrowColor);
   border-radius: 1em;
   rotate: 45deg;
 }
@@ -75,4 +81,12 @@ h4 {
 #background-arrow__bottom::after {
   left: calc(-50% - 1em);
   rotate: -45deg;
+}
+
+footer {
+  text-align: right;
+  font-size: 0.5em;
+  /* border-top: 2px solid white; */
+  padding: 1em 2em;
+  margin-block: 0;
 }

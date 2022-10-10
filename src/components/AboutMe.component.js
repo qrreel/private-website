@@ -4,7 +4,9 @@ import "../style/about-me.css";
 export function AboutMe(props) {
   const [aboutMe, setAboutMe] = useState(false);
 
-  const hideStyle = { display: aboutMe ? "none" : "inline-block" };
+  const hideStyle = {
+    display: aboutMe ? "none" : "inline-block",
+  };
   const hideStyleH1 = {
     fontSize: props.width > props.minWidth ? "10rem" : "6rem",
     display: aboutMe ? "none" : "block",
@@ -22,16 +24,13 @@ export function AboutMe(props) {
           <br />
           Live in Gdańsk, Poland. <br />
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          nesciunt ullam itaque! Consequuntur, asperiores modi!
-          <span style={hideStyle}>(...)</span>
+          I'm learning Frontend since February 2022 and constantly growing my
+          skills. Highly motivated and focus on my goals.
+          <span style={hideStyle}>..</span>
         </p>
         <p style={{ display: !aboutMe ? "none" : "block" }}>
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          nesciunt ullam itaque! Consequuntur, asperiores modi! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Quasi nesciunt ullam
-          itaque! Consequuntur, asperiores modi!
+          In progress...
         </p>
         <button
           id="about-me__read-more-btn"

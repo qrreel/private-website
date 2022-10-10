@@ -27,7 +27,7 @@ ul {
   list-style-type: none;
   line-height: 0.95em;
   text-align: right;
-  cursor: pointer;
+  cursor: default;
 }
 
 ul:hover li:not(:hover) {
@@ -40,7 +40,7 @@ ul:hover li:not(:hover) {
 }
 
 .changeTitle {
-  animation: show-in 0.75s;
+  animation: show-in 0.5s;
 }
 
 @keyframes show-in {
