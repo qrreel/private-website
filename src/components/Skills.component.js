@@ -5,8 +5,6 @@ import "../style/skills.css";
 export function Skills() {
   const SKILLS_BASE = "skills";
   const SHOW_IN_DELAY = 100;
-  const LIGHT_STAR = { opacity: 0.9 };
-  const DARK_STAR = { opacity: 0.15 };
 
   const [experienceLevel, setExperienceLevel] = useState(SKILLS_BASE);
   const [showIn, setShowIn] = useState(true);
@@ -16,7 +14,7 @@ export function Skills() {
 
     for (let i = 0; i < 5; i++) {
       levelArray.push(
-        <span key={i} style={i < lvl ? LIGHT_STAR : DARK_STAR}>
+        <span key={i} className={i < lvl ? "light-star" : "dark-star"}>
           ★
         </span>
       );
@@ -51,7 +49,7 @@ export function Skills() {
         id="skills-container__title-container"
         className={showIn ? "changeTitle" : null}
       >
-        <h4 id="skills-container__title" style={showIn ? null : { opacity: 0 }}>
+        <h4 id="skills-container__title" className={showIn ? null : "hide"}>
           {experienceLevel}
         </h4>
       </div>

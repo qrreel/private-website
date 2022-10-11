@@ -39,6 +39,18 @@ ul:hover li:not(:hover) {
   margin-left: 1em;
 }
 
+.light-star {
+  opacity: 0.9;
+}
+
+.dark-star {
+  opacity: 0.15;
+}
+
+.hide {
+  opacity: 0;
+}
+
 .changeTitle {
   animation: show-in 0.5s;
 }
