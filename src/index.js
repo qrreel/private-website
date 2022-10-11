@@ -28,7 +28,7 @@ function App() {
   useLayoutEffect(() => getNewWidth());
 
   return (
-    <div style={{ fontSize: width > MIN_WIDTH ? "2rem" : "1.7rem" }}>
+    <div className={width > MIN_WIDTH ? "font-size-big" : "font-size-small"}>
       <div id="background-arrow">
         <div id="background-arrow__base">
           <div id="background-arrow__bottom"></div>
