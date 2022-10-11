@@ -11,12 +11,12 @@ const MY_SITE_GITHUB_LINK = "https://github.com/qrreel/private-website";
 const SPACE_NEWS_GITHUB_LINK =
   "https://github.com/qrreel/space_flight_news_api";
 const DAILY_PLANNER_GITHUB_LINK = "https://github.com/qrreel/my_panel";
+const OTHERS_REPOSITORY = "https://github.com/qrreel?tab=repositories";
 
 export const projects = [
   {
     id: 1,
     title: "My website",
-    description: "My personal website - current page ;)",
     uses: [
       { key: 1, img: JAVASCRIPT_LOGO },
       { key: 2, img: REACT_LOGO },
@@ -26,7 +26,6 @@ export const projects = [
   {
     id: 2,
     title: "Daily planner",
-    description: "Calendar, clock and tasks lists",
     uses: [
       { key: 1, img: JAVASCRIPT_LOGO },
       { key: 2, img: TYPESCRIPT_LOGO },
@@ -38,7 +37,6 @@ export const projects = [
   {
     id: 3,
     title: "Space News",
-    description: "Based on Spaceflights News API.",
     uses: [
       { key: 1, img: JAVASCRIPT_LOGO },
       { key: 2, img: REACT_LOGO },
@@ -54,6 +52,6 @@ export const projects = [
       "Tic-Tac-Toe Game",
       "Weather API",
     ],
-    src: "https://github.com/qrreel?tab=repositories",
+    src: OTHERS_REPOSITORY,
   },
 ];
