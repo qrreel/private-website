@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../style/about-me.css";
 
 export function AboutMe(props) {

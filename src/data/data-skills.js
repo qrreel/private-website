@@ -1,6 +1,6 @@
 export const skills = [
   { name: "HTML/CSS", level: 4 },
-  { name: "SCSS", level: 0 },
+  { name: "SCSS", level: 2 },
   { name: "JavaScript", level: 3 },
   { name: "TypeScript", level: 1 },
   { name: "jQuery", level: 1 },
@@ -15,6 +15,7 @@ export const skills = [
   { name: "CleanCode", level: 3 },
   { name: "VSCode", level: 4 },
   { name: "Figma", level: 2 },
+  { name: "Power Apps", level: 1 },
 ];
 
 export const levelOfExperience = {
