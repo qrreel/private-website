@@ -16,6 +16,8 @@ export const skills = [
   { name: "VSCode", level: 4 },
   { name: "Figma", level: 2 },
   { name: "Power Apps", level: 1 },
+  { name: "C#", level: 1 },
+  { name: "Unity", level: 1 },
 ];
 
 export const levelOfExperience = {
